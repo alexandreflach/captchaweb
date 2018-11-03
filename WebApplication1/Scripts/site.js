@@ -4,7 +4,7 @@
         $('.captcha').html('');
         var contentId = $('#captcha-id-enabled').data('id-div');
         var required = $('#' + contentId).data('required');
-        if (required == undefined || required === true) {
+        if (required === undefined || required === true) {
             $.ajax({
                 url: 'Home/CaptchaGoogle',
                 type: 'GET',
